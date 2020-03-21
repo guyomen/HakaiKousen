@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+.mdl-layout__content {
+    flex: 1 0 auto;
+}
+
+footer {
+    min-height: 16px;
+}
+
+#content-edit>div {
+    overflow-y: auto;
+}
+
+.error-page .error-image {
+    width: 100%;
+    max-width: 640px;
+}
+
+
+.quote {
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 8px;
+    position: relative;
+}
+
+.quote .quote-author{
+    margin-top: 8px;
+    color: #C0C0C0;
+}
+
+.quote::before {
+    content: '“';
+    font-size: 48px;
+    color: #C0C0C0;
+    left: -32px;
+    top: 8px;
+    position: absolute;
+}
+
+.search-radio {
+    float: left;
+}
+
+label.search-radio.bordered-card input {
+    display: none;
+}
+
+label.search-radio.bordered-card input + span.card-container {
+    margin: 0;
+    text-align: center;
+    display: block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label.search-radio.bordered-card input:checked + span {
+    background-color: rgb(244,67,54);
+}
+
+#search-input {
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+}
+
+.search-input {
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.start-button {
+    border: 2px #424242 solid;
+    color: #424242;
+    background: #A0A0A0;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    height: 30px;
+    width: 90px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.start-button:active {
+     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+     0 3px 14px 2px rgba(0, 0, 0, 0.12),
+     0 5px 5px -3px rgba(0, 0, 0, 0.4);
+ }
+
+a.black-link {
+    color: #424242;
+    text-decoration: none;
+}
+
+a.black-link:hover {
+    color: #0a001f;
+}
+
+.pokemon-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.previous-pokemon, .next-pokemon {
+    width:120px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.current-pokemon {
+    flex-grow: 1;
+    margin: 5px;
+    text-align: center;
+}
+
+.stat .stat-name, .stat .stat-value, .evolution-chain {
+    border-radius: 4px;
+}
+
+.bordered-card {
+    border: #0a001f solid 1px;
+    border-radius: 4px;
+}
+
+.bordered-card-bold {
+    border: #0a001f solid 2px;
+    border-radius: 4px;
+}
+
+.bordered-card .card-container, .bordered-card-bold .card-container {
+    margin: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.search-radio.bordered-card {
+    margin: 2px;
+    width: 92px;
+}
+
+.search-radio.bordered-card label.card-container {
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.bordered-card.image-card {
+    min-height: 200px;
+}
+
+.bordered-card.image-card .card-container {
+    margin:0;
+    height:100%;
+}
+
+.bordered-card-bold h5, .bordered-card h5 {
+    margin-top: 0;
+}
+
+.evolution-chain {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    border: #0a001f solid 1px;
+    border-radius: 4px;
+    width: 160px;
+    min-height: 48px;
+}
+.evolution-chain .condition {
+    position: absolute;
+    top: 0;
+    right:0;
+    margin:0;
+    border: none;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 120px;
+    min-height:16px;
+    line-height: 16px;
+    text-align: right;
+    background-color: #DDDDDD;
+}
+.evolution-chain .pokemon {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin: 0;
+    border: none;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    width: 120px;
+    text-align: right;
+    height:16px;
+}
+
+.evolution-chain .image {
+    position: absolute;
+    min-height: 42px;
+    width: 40px;
+    padding: 3px 0;
+    left: 0;
+    top: 0;
+    border-right: #DDDDDD solid 1px;
+}
+
+.pokemon-dex-card {
+    border: white solid 2px;
+    border-radius: 4px;
+}
+
+.dex-card p {
+    margin: 0;
+}
+
+.dex-card {
+    height:150px;
+    width:150px;
+    margin:5px;
+    display: inline-block;
+    padding: 0;
+    border: white solid 2px;
+    border-radius: 4px;
+}
+
+.dex-card-inner {
+    margin: auto;
+    padding: 0;
+}
+
+.dex-card-inner img {
+    width:100%;
+    max-width:128px;
+}
+
+.dex-card-inner {
+    margin:0!important;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dex-card.dex-card-generation {
+    height: 154px;
+    width: 154px;
+    margin: 3px;
+    border-radius: 6px;
+    font-size:50px;
+    background-color: #F2F2F2;
+}
+
+.dex-card-generation .front-layer {
+    background: #F2F2F2;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    margin: 2px;
+    height: 150px;
+    line-height:150px;
+}
+
+.dex-card.dex-card-region {
+    height: 154px;
+    width: 154px;
+    margin: 3px;
+    border-radius: 6px;
+    font-size:42px;
+    background-color: #F2F2F2;
+}
+
+.dex-card-region .front-layer {
+    background: #F2F2F2;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    margin: 2px;
+    height: 150px;
+    line-height:150px;
+}
+
+.type, .efficacy {
+    color: #0a001f;
+    border: solid #0a001f 1px;
+    border-radius: 3px;
+    display: inline-block;
+    width: 56px;
+    height:16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.type-efficacy, .stat, .bordered-value {
+    margin:2px;
+    color: #0a001f;
+    display: inline-block;
+    width: 56px;
+    height:32px;
+    line-height: 18px;
+    border: solid #0a001f 1px;
+    border-radius: 4px;
+    position: relative;
+
+}
+.type-efficacy .type, .bordered-value .header {
+    position: absolute;
+    top: 0;
+    left:0;
+    margin:0;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+p.auto-fill {
+    margin: 0;
+}
+
+.stat .stat-name, .stat .stat-value, .bordered-value .header {
+    border-radius: 4px;
+}
+
+.stat .stat-name, .bordered-value .header {
+    position: absolute;
+    top: 0;
+    left:0;
+    margin:0;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 56px;
+    height:16px;
+    line-height: 16px;
+    text-align: center;
+    color: #0a001f;
+    background-color: #DDDDDD!important;
+}
+.type-efficacy .efficacy, .stat .stat-value {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin: 0;
+    border: none;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 56px;
+    text-align: center;
+}
+
+.stat .stat-value {
+    height:16px;
+    line-height: 16px;
+}
+
+.type-acier {
+    background-color: #B7B7CE!important;
+}
+.type-combat {
+    background-color: #C22E28!important;
+}
+.type-dragon {
+    background-color: #6F35FC!important;
+}
+.type-eau {
+    background-color: #6390F0!important;
+}
+.type-electrique {
+    background-color: #F7D02C!important;
+}
+.type-fee {
+    background-color: #D685AD!important;
+}
+.type-feu {
+    background-color: #EE8130!important;
+}
+.type-glace {
+    background-color: #96D9D6!important;
+}
+.type-insecte {
+    background-color: #A6B91A!important;
+}
+.type-normal {
+    background-color: #A8A77A!important;
+}
+.type-plante {
+    background-color: #7AC74C!important;
+}
+.type-poison {
+    background-color: #A33EA1!important;
+}
+.type-psy {
+    background-color: #F95587!important;
+}
+.type-roche {
+    background-color: #B6A136!important;
+}
+.type-sol {
+    background-color: #E2BF65!important;
+}
+.type-spectre {
+    background-color: #735797!important;
+}
+.type-tenebres {
+    background-color: #705746!important;
+}
+.type-vol {
+    background-color: #A98FF3!important;
+}
+
+.light.type-acier {
+    background-color: #F0F0F0 !important;
+}
+.light.type-combat {
+    background-color: #FF7E78 !important;
+}
+.light.type-dragon {
+    background-color: #BF85FF !important;
+}
+.light.type-eau {
+    background-color: #B3E0FF !important;
+}
+.light.type-electrique {
+    background-color: #FFFF7C !important;
+}
+.light.type-fee {
+    background-color: #FFD5FD !important;
+}
+.light.type-feu {
+    background-color: #FFD180 !important;
+}
+.light.type-glace {
+    background-color: #E6FFFF !important;
+}
+.light.type-insecte {
+    background-color: #F6FF6A !important;
+}
+.light.type-normal {
+    background-color: #F8F7CA !important;
+}
+.light.type-plante {
+    background-color: #CAFF9C !important;
+}
+.light.type-poison {
+    background-color: #F38EF1 !important;
+}
+.light.type-psy {
+    background-color: #FFA5D7 !important;
+}
+.light.type-roche {
+    background-color: #FFF186 !important;
+}
+.light.type-sol {
+    background-color: #FFFFB5 !important;
+}
+.light.type-spectre {
+    background-color: #C3A7E7 !important;
+}
+.light.type-tenebres {
+    background-color: #C0A796 !important;
+}
+.light.type-vol {
+    background-color: #F9DFFF !important;
+}
+
+
+.type-acier::before {
+    content:"acier";
+}
+.type-combat::before {
+    content:"combat";
+}
+.type-dragon::before {
+    content:"dragon";
+}
+.type-eau::before {
+    content:"eau";
+}
+.type-electrique::before {
+    content:"électrik";
+}
+.type-fee::before {
+    content:"fée";
+}
+.type-feu::before {
+    content:"feu";
+}
+.type-glace::before {
+    content:"glace";
+}
+.type-insecte::before {
+    content:"insecte";
+}
+.type-normal::before {
+    content:"normal";
+}
+.type-plante::before {
+    content:"plante";
+}
+.type-poison::before {
+    content:"poison";
+}
+.type-psy::before {
+    content:"psy";
+}
+.type-roche::before {
+    content:"roche";
+}
+.type-sol::before {
+    content:"sol";
+}
+.type-spectre::before {
+    content:"spectre";
+}
+.type-tenebres::before {
+    content:"ténèbres";
+}
+.type-vol::before {
+    content:"vol";
+}
+
+.efficacy-14::before {
+    content:"¼";
+}
+.efficacy-12::before {
+    content:"½";
+}
+.efficacy-1::before {
+    content:"1";
+}
+.efficacy-2::before {
+    content:"2";
+}
+.efficacy-4::before {
+    content:"4";
+}
+.efficacy-0::before {
+    content:"0";
+}
+
+.stat-dexterite::before {
+    content:"dex";
+}
+.stat-force::before {
+    content:"for";
+}
+.stat-concentration::before {
+    content:"con";
+}
+.stat-endurance::before {
+    content:"end";
+}
+.stat-volonte::before {
+    content:"vol";
+}
+.stat-vitalite::before {
+    content:"vit";
+}
+.stat-energie::before {
+    content:"ene";
+}
+.dex-moves-table, .dex-abilities-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.dex-moves-table .upper td, .dex-abilities-table .upper td {
+    border-top: 1px solid #0a001f;
+    height: 24px;
+    line-height: 26px;
+    background-color: #DDDDDD;
+    min-width: 32px;
+}
+.dex-abilities-table .upper td.accent {
+    font-style: italic;
+    background-color: #C0C0C0;
+}
+.dex-moves-table td .inner-container, .dex-abilities-table td .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dex-moves-table td small, .dex-abilities-table td small {
+    font-size: 8px;
+    line-height: 8px;
+    height:8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.dex-moves-table td span, .dex-abilities-table td span {
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    text-align: center;
+}
+.dex-moves-table .lower td, .dex-abilities-table .lower td {
+    border-right: 1px solid #0a001f;
+    border-left: 1px solid #0a001f;
+    border-bottom: 1px solid #0a001f;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+@media (max-width: 479px) {
+    .dex-moves-table tr, .dex-abilities-table tr {
+        display: table-row;
+    }
+    .dex-moves-table .upper td {
+        display: block;
+        border-left: 1px solid #0a001f;
+        border-top: 1px solid #0a001f;
+        border-right: 1px solid #0a001f;
+        background: none;
+    }
+    .dex-moves-table .upper td:first-child, .dex-abilities-table .upper td:first-child {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .dex-moves-table .lower td {
+        border:  1px solid #0a001f;
+        background-color: #DDDDDD;
+    }
+}
+
+@media (min-width: 480px) {
+
+    .dex-moves-table .upper td:first-child, .dex-abilities-table .upper td:first-child {
+        border-top-left-radius: 4px;
+        border-left: 1px solid #0a001f;
+    }
+    .dex-moves-table .upper td:last-child, .dex-abilities-table .upper td:last-child {
+        border-top-right-radius: 4px;
+        border-right: 1px solid #0a001f;
+    }
+}
+.dex-moves-table tr.spacer, .dex-abilities-table tr.spacer {
+    height: 4px;
+}
+.dex-moves-table .upper-lower td, .dex-abilities-table .upper-lower td {
+    border-radius: 4px;
+    border: 1px solid #0a001f;
+    background-color: #DDDDDD;
+}
+
+.cover {
+
+    width: 100%;
+    min-height: 217mm;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+}
+
+.cover img {
+    margin: 36px auto;
+    max-width: 100%;
+}
+
+.cover p img {
+    margin: auto;
+    max-width: 100%;
+}
+
+.cover h1 {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.cover h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.bordered-value.large {
+    width: calc(100% - 4px) !important;
+    height: 16px!important;
+    line-height: 16px;
+    font-size: 14px!important;
+}
+
+.bordered-value.large .header {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 66px;
+}
+
+.mdl-forced-third {
+    width: 33.3%!important;
+}
+
+.mdl-forced-half {
+    width: calc(50% - 6px)!important;
+}
+
+.small-text .header {
+    font-size: 12px;
+}
+
+.bordered-value.large.mdl-forced-half {
+    float:left;
+    width: calc(50% - 6px)!important;
+}
+table:not(.dex-moves-table):not(.dex-abilities-table) {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table:not(.dex-moves-table):not(.dex-abilities-table) td {
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
+table:not(.dex-moves-table):not(.dex-abilities-table) th {
+    border: 1px solid black;
+    padding: 2px 4px;
+    background-color: #D2D2D2;
+}
+
+.two-columns img {
+    width: 50%;
+    margin: auto 25%;
+}
+
+.two-columns .stats {
+    text-align: center;
+}
+
+h2 .bordered-card-bold.mdl-button {
+    margin-bottom: 6px;
+}
+
+.cover p img {
+    height: 16px;
+}
+
+@media (max-width: 479px) {
+    .two-columns img {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.card-warning {
+    border-color: #770000;
+    color: #770000;
+}

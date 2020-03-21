@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terhal - Hakai Kousen</title>
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/material.red-orange.min.css" />
+    <link rel="stylesheet" href="css/default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+        <meta property="og:type" content="website">
+    <meta property="og:title" content="Hakai Kousen (beta)">
+    <meta property="og:description" content="Les dresseurs aussi ont de l'imagination !">
+    <meta property="og:url" content="http://dev.hakai-kousen.com/pokedex/7/374">
+    <meta property="og:image" content="http://dev.hakai-kousen.comimg/welcome.jpg">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Hakai Kousen</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">Accueil</a>
+                <a class="mdl-navigation__link" href="pokedex">Pokédex</a>
+                <a class="mdl-navigation__link" href="documents">Documents</a>
+                <a class="mdl-navigation__link" target="_blank" href="https://discord.gg/fyfwsxQ">Discord</a>
+            </nav>
+            <nav class="mdl-navigation">
+                <form id="search-form">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-input">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" id="search-input">
+                            <label class="mdl-textfield__label" for="search-input">Recherche ...</label>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+            </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Hakai Kousen</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Accueil</a>
+            <a class="mdl-navigation__link" href="pokedex">Pokédex</a>
+            <a class="mdl-navigation__link" href="documents">Documents</a>
+            <a class="mdl-navigation__link" target="_blank" href="https://discord.gg/fyfwsxQ">Discord</a>
+            <a class="mdl-navigation__link" target="_blank" href="https://www.facebook.com/HakaiKousenJDR/">Facebook</a>
+            <a class="mdl-navigation__link" href="api">API</a>
+            <a class="mdl-navigation__link" href="equipe">L'équipe</a>
+            <a class="mdl-navigation__link" href="contact">Nous contacter</a>
+            <a class="mdl-navigation__link" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/fr/">
+                <img src="img/cc/by-nc-nd.png" style="height:14px;">
+            </a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content mdl-grid">
+            <div class="mdl-cell mdl-grid mdl-cell--12-col-tablet mdl-cell--10-col-desktop mdl-cell--1-offset-desktop">
+        <div class="mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-cell--1-col-desktop">
+        <h2>
+            <a class="bordered-card-bold mdl-button mdl-button--colored mdl-button--icon" href="pokedex/">
+                <i class="material-icons">navigate_before</i>
+            </a>
+        </h2>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-cell--11-col-desktop mdl-tabs mdl-js-tabs">
+        <div class="mdl-tabs__tab-bar">
+                            <a href="#tab2374" class = "mdl-tabs__tab ">3G</a>
+                            <a href="#tab3374" class = "mdl-tabs__tab ">4G</a>
+                            <a href="#tab4374" class = "mdl-tabs__tab ">5G</a>
+                            <a href="#tab5374" class = "mdl-tabs__tab ">6G</a>
+                            <a href="#tab6374" class = "mdl-tabs__tab is-active">7G</a>
+                    </div>
+                    <div class="mdl-tabs__panel " id="tab2374">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col pokemon-line">
+                                                    <a class="black-link previous-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/3/373">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/373.png">
+                                    </p>
+                                    <p>
+                                        373                                        Drattak                                    </p>
+                                </div>
+                            </a>
+                                                <div class="current-pokemon bordered-card-bold" style="border-color: #3D59AB">
+                            <div class="card-container">
+                                <p>
+                                    <img src="img/lores/374.png">
+                                </p>
+                                <p>
+                                    <strong>
+                                        374                                        Terhal                                    </strong>
+                                    - Boulefer                                </p>
+                            </div>
+                        </div>
+                                                    <a class="black-link next-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/3/375">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/375.png">
+                                    </p>
+                                    <p>
+                                        375                                        Métang                                    </p>
+                                </div>
+                            </a>
+                                            </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                            <h5>Ratio mâle/femelle</h5>
+                            -♂:-♀                            <small>Asexué</small>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                    </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                            <h5>Évolutions</h5>
+                                                                    <a class="evolution-chain black-link" href="pokedex/3/375">
+                                        <div class="condition">Niveau 20</div>
+                                        <div class="pokemon">Métang</div>
+                                        <div class="image"><img src="img/lores/375.png"></div>
+                                    </a>
+                                                                                    </div>
+                    </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet">
+                                                                                                    <table class="dex-abilities-table">
+                                        <tbody>
+                                                                                    <tr class="upper">
+                                                <td class="">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Corps Sain</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Statistiques : Empêche la diminution de statistiques par le Pokémon adverse.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                    <tr class="upper">
+                                                <td class="accent">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Light Metal</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Divise par deux la masse du Pokémon.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                </tbody>
+                                    </table>
+                                                                <strong>Taille :</strong> 0.60 m, <strong>poids :</strong> 95.20 kg
+                                <h5>
+                                    Type
+                                                                            <div class="type type-acier"></div>
+                                                                            <div class="type type-psy"></div>
+                                                                    </h5>
+                                <h5>Sensibilités</h5>
+                                <div class="mdl-typography--text-center">
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-acier"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-combat"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-dragon"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-eau"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-electrique"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-fee"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-feu"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-glace"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-insecte"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-normal"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-plante"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-poison"></div>
+                                            <div class="efficacy efficacy-0"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-psy"></div>
+                                            <div class="efficacy efficacy-14"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-roche"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-sol"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-spectre"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-tenebres"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-vol"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                    </div>
+                                <h5>Stats</h5>
+                                <div class="mdl-typography--text-center">
+                                    <div class="stat">
+                                        <div class="stat-name stat-dexterite"></div>
+                                        <div class="stat-value">3</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-force"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-concentration"></div>
+                                        <div class="stat-value">4</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-endurance"></div>
+                                        <div class="stat-value">8</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-volonte"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-vitalite"></div>
+                                        <div class="stat-value">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet bordered-card image-card">
+                                <div class="card-container" style="background:url('img/hires/374.png') center / contain no-repeat">
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col bordered-card mdl-grid mdl-grid--no-spacing">
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/3/374/374?level=1">
+                                    Fiche aléat. N.1
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/3/374/374?level=20">
+                                    Fiche aléat. N.20
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/3/374/374?level=40">
+                                    Fiche aléat. N.40
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/3/374/374?level=60">
+                                    Fiche aléat. N.60
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/3/374/374?level=80">
+                                    Fiche aléat. N.80
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/3/374/374?level=100">
+                                    Fiche aléat. N.100
+                                </a>
+                            </div>
+                        </div>
+                                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par expérience</h3>
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                                                                <tr class="upper">
+                                        <td>
+                                            <div class="inner-container">
+                                                <small></small>
+                                                <span><em>Innée</em></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>nom</small>
+                                                <span>Bélier</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <div class="type type-normal"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>énergie</small>
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>précision</small>
+                                                <span>85</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>portée</small>
+                                                <span>Rayon</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>catégorie</small>
+                                                <span>Physique</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>dégats</small>
+                                                <span>9</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lower">
+                                        <td colspan="8">
+                                            <div class="inner-container">
+                                                <small>description</small>
+                                                <span>Le lanceur subit 1/4 des dégâts infligés en tant que dégâts de recul.
+Si le lanceur possède Tête de Roc il ne subit pas les dégâts de recul. </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                                                                        </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par CT/CS</h3>
+
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                            <tr class="upper-lower">
+                                    <td colspan="7">
+                                        <div class="inner-container">
+                                            <em>Aucune</em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par groupe d'&oelig;uf</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par tutorat</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                    
+                                    </div>
+            </div>
+                    <div class="mdl-tabs__panel " id="tab3374">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col pokemon-line">
+                                                    <a class="black-link previous-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/4/373">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/373.png">
+                                    </p>
+                                    <p>
+                                        373                                        Drattak                                    </p>
+                                </div>
+                            </a>
+                                                <div class="current-pokemon bordered-card-bold" style="border-color: #3D59AB">
+                            <div class="card-container">
+                                <p>
+                                    <img src="img/lores/374.png">
+                                </p>
+                                <p>
+                                    <strong>
+                                        374                                        Terhal                                    </strong>
+                                    - Boulefer                                </p>
+                            </div>
+                        </div>
+                                                    <a class="black-link next-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/4/375">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/375.png">
+                                    </p>
+                                    <p>
+                                        375                                        Métang                                    </p>
+                                </div>
+                            </a>
+                                            </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                            <h5>Ratio mâle/femelle</h5>
+                            -♂:-♀                            <small>Asexué</small>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                    </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                            <h5>Évolutions</h5>
+                                                                    <a class="evolution-chain black-link" href="pokedex/4/375">
+                                        <div class="condition">Niveau 20</div>
+                                        <div class="pokemon">Métang</div>
+                                        <div class="image"><img src="img/lores/375.png"></div>
+                                    </a>
+                                                                                    </div>
+                    </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet">
+                                                                                                    <table class="dex-abilities-table">
+                                        <tbody>
+                                                                                    <tr class="upper">
+                                                <td class="">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Corps Sain</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Statistiques : Empêche la diminution de statistiques par le Pokémon adverse.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                    <tr class="upper">
+                                                <td class="accent">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Light Metal</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Divise par deux la masse du Pokémon.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                </tbody>
+                                    </table>
+                                                                <strong>Taille :</strong> 0.60 m, <strong>poids :</strong> 95.20 kg
+                                <h5>
+                                    Type
+                                                                            <div class="type type-acier"></div>
+                                                                            <div class="type type-psy"></div>
+                                                                    </h5>
+                                <h5>Sensibilités</h5>
+                                <div class="mdl-typography--text-center">
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-acier"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-combat"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-dragon"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-eau"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-electrique"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-fee"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-feu"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-glace"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-insecte"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-normal"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-plante"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-poison"></div>
+                                            <div class="efficacy efficacy-0"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-psy"></div>
+                                            <div class="efficacy efficacy-14"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-roche"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-sol"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-spectre"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-tenebres"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-vol"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                    </div>
+                                <h5>Stats</h5>
+                                <div class="mdl-typography--text-center">
+                                    <div class="stat">
+                                        <div class="stat-name stat-dexterite"></div>
+                                        <div class="stat-value">3</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-force"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-concentration"></div>
+                                        <div class="stat-value">4</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-endurance"></div>
+                                        <div class="stat-value">8</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-volonte"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-vitalite"></div>
+                                        <div class="stat-value">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet bordered-card image-card">
+                                <div class="card-container" style="background:url('img/hires/374.png') center / contain no-repeat">
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col bordered-card mdl-grid mdl-grid--no-spacing">
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/4/374/374?level=1">
+                                    Fiche aléat. N.1
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/4/374/374?level=20">
+                                    Fiche aléat. N.20
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/4/374/374?level=40">
+                                    Fiche aléat. N.40
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/4/374/374?level=60">
+                                    Fiche aléat. N.60
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/4/374/374?level=80">
+                                    Fiche aléat. N.80
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/4/374/374?level=100">
+                                    Fiche aléat. N.100
+                                </a>
+                            </div>
+                        </div>
+                                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par expérience</h3>
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                                                                <tr class="upper">
+                                        <td>
+                                            <div class="inner-container">
+                                                <small></small>
+                                                <span><em>Innée</em></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>nom</small>
+                                                <span>Bélier</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <div class="type type-normal"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>énergie</small>
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>précision</small>
+                                                <span>85</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>portée</small>
+                                                <span>Rayon</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>catégorie</small>
+                                                <span>Physique</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>dégats</small>
+                                                <span>9</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lower">
+                                        <td colspan="8">
+                                            <div class="inner-container">
+                                                <small>description</small>
+                                                <span>Le lanceur subit 1/4 des dégâts infligés en tant que dégâts de recul.
+Si le lanceur possède Tête de Roc il ne subit pas les dégâts de recul. </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                                                                        </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par CT/CS</h3>
+
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                            <tr class="upper-lower">
+                                    <td colspan="7">
+                                        <div class="inner-container">
+                                            <em>Aucune</em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par groupe d'&oelig;uf</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par tutorat</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                                                            <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Mur De Fer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-acier"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>énergie</small>
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>précision</small>
+                                                    <span>-</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>portée</small>
+                                                    <span>Personnel</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Autre</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="7" class="">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                            <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Tête de Fer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-acier"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>énergie</small>
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>précision</small>
+                                                    <span>100</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>portée</small>
+                                                    <span>Cible</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Physique</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>8</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="7" class="">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                                                    </tbody>
+                            </table>
+                        </div>
+                    
+                                    </div>
+            </div>
+                    <div class="mdl-tabs__panel " id="tab4374">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col pokemon-line">
+                                                    <a class="black-link previous-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/5/373">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/373.png">
+                                    </p>
+                                    <p>
+                                        373                                        Drattak                                    </p>
+                                </div>
+                            </a>
+                                                <div class="current-pokemon bordered-card-bold" style="border-color: #3D59AB">
+                            <div class="card-container">
+                                <p>
+                                    <img src="img/lores/374.png">
+                                </p>
+                                <p>
+                                    <strong>
+                                        374                                        Terhal                                    </strong>
+                                    - Boulefer                                </p>
+                            </div>
+                        </div>
+                                                    <a class="black-link next-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/5/375">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/375.png">
+                                    </p>
+                                    <p>
+                                        375                                        Métang                                    </p>
+                                </div>
+                            </a>
+                                            </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                            <h5>Ratio mâle/femelle</h5>
+                            -♂:-♀                            <small>Asexué</small>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                    </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                            <h5>Évolutions</h5>
+                                                                    <a class="evolution-chain black-link" href="pokedex/5/375">
+                                        <div class="condition">Niveau 20</div>
+                                        <div class="pokemon">Métang</div>
+                                        <div class="image"><img src="img/lores/375.png"></div>
+                                    </a>
+                                                                                    </div>
+                    </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet">
+                                                                                                    <table class="dex-abilities-table">
+                                        <tbody>
+                                                                                    <tr class="upper">
+                                                <td class="">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Corps Sain</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Statistiques : Empêche la diminution de statistiques par le Pokémon adverse.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                    <tr class="upper">
+                                                <td class="accent">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Light Metal</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Divise par deux la masse du Pokémon.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                </tbody>
+                                    </table>
+                                                                <strong>Taille :</strong> 0.60 m, <strong>poids :</strong> 95.20 kg
+                                <h5>
+                                    Type
+                                                                            <div class="type type-acier"></div>
+                                                                            <div class="type type-psy"></div>
+                                                                    </h5>
+                                <h5>Sensibilités</h5>
+                                <div class="mdl-typography--text-center">
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-acier"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-combat"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-dragon"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-eau"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-electrique"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-fee"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-feu"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-glace"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-insecte"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-normal"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-plante"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-poison"></div>
+                                            <div class="efficacy efficacy-0"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-psy"></div>
+                                            <div class="efficacy efficacy-14"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-roche"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-sol"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-spectre"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-tenebres"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-vol"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                    </div>
+                                <h5>Stats</h5>
+                                <div class="mdl-typography--text-center">
+                                    <div class="stat">
+                                        <div class="stat-name stat-dexterite"></div>
+                                        <div class="stat-value">3</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-force"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-concentration"></div>
+                                        <div class="stat-value">4</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-endurance"></div>
+                                        <div class="stat-value">8</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-volonte"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-vitalite"></div>
+                                        <div class="stat-value">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet bordered-card image-card">
+                                <div class="card-container" style="background:url('img/hires/374.png') center / contain no-repeat">
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col bordered-card mdl-grid mdl-grid--no-spacing">
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/5/374/374?level=1">
+                                    Fiche aléat. N.1
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/5/374/374?level=20">
+                                    Fiche aléat. N.20
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/5/374/374?level=40">
+                                    Fiche aléat. N.40
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/5/374/374?level=60">
+                                    Fiche aléat. N.60
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/5/374/374?level=80">
+                                    Fiche aléat. N.80
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/5/374/374?level=100">
+                                    Fiche aléat. N.100
+                                </a>
+                            </div>
+                        </div>
+                                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par expérience</h3>
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                                                                <tr class="upper">
+                                        <td>
+                                            <div class="inner-container">
+                                                <small></small>
+                                                <span><em>Innée</em></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>nom</small>
+                                                <span>Bélier</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <div class="type type-normal"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>énergie</small>
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>précision</small>
+                                                <span>85</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>portée</small>
+                                                <span>Rayon</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>catégorie</small>
+                                                <span>Physique</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>dégats</small>
+                                                <span>9</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lower">
+                                        <td colspan="8">
+                                            <div class="inner-container">
+                                                <small>description</small>
+                                                <span>Le lanceur subit 1/4 des dégâts infligés en tant que dégâts de recul.
+Si le lanceur possède Tête de Roc il ne subit pas les dégâts de recul. </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                                                                        </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par CT/CS</h3>
+
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                            <tr class="upper-lower">
+                                    <td colspan="7">
+                                        <div class="inner-container">
+                                            <em>Aucune</em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par groupe d'&oelig;uf</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par tutorat</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                                                            <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Mur De Fer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-acier"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>énergie</small>
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>précision</small>
+                                                    <span>-</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>portée</small>
+                                                    <span>Personnel</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Autre</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="7" class="">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                            <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Tête de Fer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-acier"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>énergie</small>
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>précision</small>
+                                                    <span>100</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>portée</small>
+                                                    <span>Cible</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Physique</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>8</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="7" class="">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                                                    </tbody>
+                            </table>
+                        </div>
+                    
+                                    </div>
+            </div>
+                    <div class="mdl-tabs__panel " id="tab5374">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col pokemon-line">
+                                                    <a class="black-link previous-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/6/373">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/373.png">
+                                    </p>
+                                    <p>
+                                        373                                        Drattak                                    </p>
+                                </div>
+                            </a>
+                                                <div class="current-pokemon bordered-card-bold" style="border-color: #3D59AB">
+                            <div class="card-container">
+                                <p>
+                                    <img src="img/lores/374.png">
+                                </p>
+                                <p>
+                                    <strong>
+                                        374                                        Terhal                                    </strong>
+                                    - Boulefer                                </p>
+                            </div>
+                        </div>
+                                                    <a class="black-link next-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/6/375">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/375.png">
+                                    </p>
+                                    <p>
+                                        375                                        Métang                                    </p>
+                                </div>
+                            </a>
+                                            </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                            <h5>Ratio mâle/femelle</h5>
+                            -♂:-♀                            <small>Asexué</small>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                    </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                            <h5>Évolutions</h5>
+                                                                    <a class="evolution-chain black-link" href="pokedex/6/375">
+                                        <div class="condition">Niveau 20</div>
+                                        <div class="pokemon">Métang</div>
+                                        <div class="image"><img src="img/lores/375.png"></div>
+                                    </a>
+                                                                                    </div>
+                    </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet">
+                                                                                                    <table class="dex-abilities-table">
+                                        <tbody>
+                                                                                    <tr class="upper">
+                                                <td class="">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Corps Sain</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Statistiques : Empêche la diminution de statistiques par le Pokémon adverse.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                    <tr class="upper">
+                                                <td class="accent">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Light Metal</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Divise par deux la masse du Pokémon.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                </tbody>
+                                    </table>
+                                                                <strong>Taille :</strong> 0.60 m, <strong>poids :</strong> 95.20 kg
+                                <h5>
+                                    Type
+                                                                            <div class="type type-acier"></div>
+                                                                            <div class="type type-psy"></div>
+                                                                    </h5>
+                                <h5>Sensibilités</h5>
+                                <div class="mdl-typography--text-center">
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-acier"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-combat"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-dragon"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-eau"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-electrique"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-fee"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-feu"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-glace"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-insecte"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-normal"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-plante"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-poison"></div>
+                                            <div class="efficacy efficacy-0"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-psy"></div>
+                                            <div class="efficacy efficacy-14"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-roche"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-sol"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-spectre"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-tenebres"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-vol"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                    </div>
+                                <h5>Stats</h5>
+                                <div class="mdl-typography--text-center">
+                                    <div class="stat">
+                                        <div class="stat-name stat-dexterite"></div>
+                                        <div class="stat-value">3</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-force"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-concentration"></div>
+                                        <div class="stat-value">4</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-endurance"></div>
+                                        <div class="stat-value">8</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-volonte"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-vitalite"></div>
+                                        <div class="stat-value">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet bordered-card image-card">
+                                <div class="card-container" style="background:url('img/hires/374.png') center / contain no-repeat">
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col bordered-card mdl-grid mdl-grid--no-spacing">
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/6/374/374?level=1">
+                                    Fiche aléat. N.1
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/6/374/374?level=20">
+                                    Fiche aléat. N.20
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/6/374/374?level=40">
+                                    Fiche aléat. N.40
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/6/374/374?level=60">
+                                    Fiche aléat. N.60
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/6/374/374?level=80">
+                                    Fiche aléat. N.80
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/6/374/374?level=100">
+                                    Fiche aléat. N.100
+                                </a>
+                            </div>
+                        </div>
+                                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par expérience</h3>
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                                                                <tr class="upper">
+                                        <td>
+                                            <div class="inner-container">
+                                                <small></small>
+                                                <span><em>Innée</em></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>nom</small>
+                                                <span>Bélier</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <div class="type type-normal"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>énergie</small>
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>précision</small>
+                                                <span>85</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>portée</small>
+                                                <span>Rayon</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>catégorie</small>
+                                                <span>Physique</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>dégats</small>
+                                                <span>9</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lower">
+                                        <td colspan="8">
+                                            <div class="inner-container">
+                                                <small>description</small>
+                                                <span>Le lanceur subit 1/4 des dégâts infligés en tant que dégâts de recul.
+Si le lanceur possède Tête de Roc il ne subit pas les dégâts de recul. </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                                                                        </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par CT/CS</h3>
+
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                            <tr class="upper-lower">
+                                    <td colspan="7">
+                                        <div class="inner-container">
+                                            <em>Aucune</em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par groupe d'&oelig;uf</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par tutorat</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                                                            <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Mur De Fer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-acier"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>énergie</small>
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>précision</small>
+                                                    <span>-</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>portée</small>
+                                                    <span>Personnel</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Autre</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>0</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="7" class="">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                            <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Tête de Fer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-acier"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>énergie</small>
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>précision</small>
+                                                    <span>100</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>portée</small>
+                                                    <span>Cible</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Physique</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>8</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="7" class="">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                                                    </tbody>
+                            </table>
+                        </div>
+                    
+                                    </div>
+            </div>
+                    <div class="mdl-tabs__panel is-active" id="tab6374">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col pokemon-line">
+                                                    <a class="black-link previous-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/7/373">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/373.png">
+                                    </p>
+                                    <p>
+                                        373                                        Drattak                                    </p>
+                                </div>
+                            </a>
+                                                <div class="current-pokemon bordered-card-bold" style="border-color: #3D59AB">
+                            <div class="card-container">
+                                <p>
+                                    <img src="img/lores/374.png">
+                                </p>
+                                <p>
+                                    <strong>
+                                        374                                        Terhal                                    </strong>
+                                    - Boulefer                                </p>
+                            </div>
+                        </div>
+                                                    <a class="black-link next-pokemon bordered-card-bold" style="border-color: #3D59AB" href="pokedex/7/375">
+                                <div class="card-container">
+                                    <p>
+                                        <img src="img/lores/375.png">
+                                    </p>
+                                    <p>
+                                        375                                        Métang                                    </p>
+                                </div>
+                            </a>
+                                            </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                            <h5>Ratio mâle/femelle</h5>
+                            -♂:-♀                            <small>Asexué</small>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                    </div>
+                        <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
+                                                            <h5>Évolutions</h5>
+                                                                    <a class="evolution-chain black-link" href="pokedex/7/375">
+                                        <div class="condition">Niveau 20</div>
+                                        <div class="pokemon">Métang</div>
+                                        <div class="image"><img src="img/lores/375.png"></div>
+                                    </a>
+                                                                                    </div>
+                    </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet">
+                                                                                                    <table class="dex-abilities-table">
+                                        <tbody>
+                                                                                    <tr class="upper">
+                                                <td class="">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Corps Sain</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Statistiques : Empêche la diminution de statistiques par le Pokémon adverse.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                    <tr class="upper">
+                                                <td class="accent">
+                                                    <div class="inner-container">
+                                                        <small>nom</small>
+                                                        <span>Light Metal</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="lower">
+                                                <td colspan="6">
+                                                    <div class="inner-container">
+                                                        <small>description</small>
+                                                        <span>Divise par deux la masse du Pokémon.</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                                                                </tbody>
+                                    </table>
+                                                                <strong>Taille :</strong> 0.60 m, <strong>poids :</strong> 95.20 kg
+                                <h5>
+                                    Type
+                                                                            <div class="type type-acier"></div>
+                                                                            <div class="type type-psy"></div>
+                                                                    </h5>
+                                <h5>Sensibilités</h5>
+                                <div class="mdl-typography--text-center">
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-acier"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-combat"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-dragon"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-eau"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-electrique"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-fee"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-feu"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-glace"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-insecte"></div>
+                                            <div class="efficacy efficacy-1"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-normal"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-plante"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-poison"></div>
+                                            <div class="efficacy efficacy-0"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-psy"></div>
+                                            <div class="efficacy efficacy-14"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-roche"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-sol"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-spectre"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-tenebres"></div>
+                                            <div class="efficacy efficacy-2"></div>
+                                        </div>
+                                                                            <div class="type-efficacy">
+                                            <div class="type type-vol"></div>
+                                            <div class="efficacy efficacy-12"></div>
+                                        </div>
+                                                                    </div>
+                                <h5>Stats</h5>
+                                <div class="mdl-typography--text-center">
+                                    <div class="stat">
+                                        <div class="stat-name stat-dexterite"></div>
+                                        <div class="stat-value">3</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-force"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-concentration"></div>
+                                        <div class="stat-value">4</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-endurance"></div>
+                                        <div class="stat-value">8</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-volonte"></div>
+                                        <div class="stat-value">6</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-name stat-vitalite"></div>
+                                        <div class="stat-value">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet bordered-card image-card">
+                                <div class="card-container" style="background:url('img/hires/374.png') center / contain no-repeat">
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col bordered-card mdl-grid mdl-grid--no-spacing">
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/7/374/374?level=1">
+                                    Fiche aléat. N.1
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/7/374/374?level=20">
+                                    Fiche aléat. N.20
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/7/374/374?level=40">
+                                    Fiche aléat. N.40
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/7/374/374?level=60">
+                                    Fiche aléat. N.60
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/7/374/374?level=80">
+                                    Fiche aléat. N.80
+                                </a>
+                                <a class="mdl-button mdl-js-button mdl-button--colored mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone" target="_blank" href="pokedex/random_pokemon/7/374/374?level=100">
+                                    Fiche aléat. N.100
+                                </a>
+                            </div>
+                        </div>
+                                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par expérience</h3>
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                                                                <tr class="upper">
+                                        <td>
+                                            <div class="inner-container">
+                                                <small></small>
+                                                <span><em>Innée</em></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>nom</small>
+                                                <span>Bélier</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <div class="type type-normal"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>énergie</small>
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>précision</small>
+                                                <span>85</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>portée</small>
+                                                <span>Rayon</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>catégorie</small>
+                                                <span>Physique</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inner-container">
+                                                <small>dégats</small>
+                                                <span>9</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lower">
+                                        <td colspan="8">
+                                            <div class="inner-container">
+                                                <small>description</small>
+                                                <span>Le lanceur subit 1/4 des dégâts infligés en tant que dégâts de recul.
+Si le lanceur possède Tête de Roc il ne subit pas les dégâts de recul. </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="spacer"></tr>
+                                                                                        </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                        <h3>Capacités apprises par CT/CS</h3>
+
+                        <table class="dex-moves-table">
+                            <tbody>
+                                                            <tr class="upper-lower">
+                                    <td colspan="7">
+                                        <div class="inner-container">
+                                            <em>Aucune</em>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par groupe d'&oelig;uf</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                                                                <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités apprises par tutorat</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                    <tr class="upper-lower">
+                                        <td colspan="6">
+                                            <div class="inner-container">
+                                                <em>Aucune</em>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                    
+                                            <div class="mdl-grid mdl-cell mdl-cell--12-col bordered-card-bold">
+                            <h3>Capacités Z</h3>
+                            <table class="dex-moves-table">
+                                <tbody>
+                                                                                                                                                    <tr class="upper">
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>nom</small>
+                                                    <span>Turbo-Charge Bulldozer</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <div class="type type-normal"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>basée sur</small>
+                                                    <span>Bélier</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>catégorie</small>
+                                                    <span>Physique</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="inner-container">
+                                                    <small>dégats</small>
+                                                    <span>18</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="lower">
+                                            <td colspan="5">
+                                                <div class="inner-container">
+                                                    <small>description</small>
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer"></tr>
+                                                                                                    </tbody>
+                            </table>
+                        </div>
+                                    </div>
+            </div>
+                    </div>
+</div>
+        </div>
+    </main>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <ul class="mdl-mini-footer__link-list">
+                <li><a target="_blank" href="https://www.facebook.com/HakaiKousenJDR/">Facebook</a></li>
+                <li><a href="api">API</a></li>
+                <li><a href="equipe">L'équipe</a></li>
+                <li><a href="contact">Nous contacter</a></li>
+                <li>
+                    <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/fr/">
+                        <img src="img/cc/by-nc-nd.png" style="height:14px;">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://phalconphp.com/fr/">
+                        <img src="img/phalconphp.png" style="height:32px;vertical-align:top;">
+                        Construit avec Phalcon
+                    </a>
+                </li>
+                <li>
+                                            <a href="login">Login</a>
+                                    </li>
+                            </ul>
+        </div>
+    </footer>
+</div>
+<script defer src="js/material.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

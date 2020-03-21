@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Agency FB';
+    src: url('/fonts/agency_fb.ttf');
+}
+@font-face {
+    font-family: 'Agency FB';
+    src: url('/fonts/agency_fb.ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: "Agency FB";
+    margin: 0;
+}
+
+@page {
+    margin: 12mm;
+}
+
+.two-columns {
+    column-count: 2;
+    page-break-after: always;
+}
+
+.two-columns img {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+p, h1, h2, h3, h4, h5 {margin:0}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
+th {
+    background-color: #D2D2D2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li:before {
+    content:'';
+    display:inline-block;
+    height:1em;
+    width:1em;
+    background-image:url('/img/pokeball.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    padding-left: 2em;
+}
+
+.cover {
+
+    width: 186mm;
+    height: 273mm;
+    text-align: center;
+}
+
+.cover img {
+    margin: 36px auto;
+    max-width: 100%;
+}
+
+.cover p img {
+    margin: auto;
+    display: inline;
+    height: 16px;
+}
+
+.cover h1 {
+    margin-top: 10cm;
+    font-size: 120px;
+    font-weight: bold;
+    color: #F2F2F2;
+}
+
+.cover h2 {
+    margin-top: 10cm;
+    font-size: 60px;
+    font-weight: bold;
+    color: #F2F2F2;
+}
+
+.hard-page-break {
+    content: ' ';
+    page-break-after: always;
+}
+
+.stats {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    margin:2px;
+    color: #0a001f;
+    display: inline-block;
+    width: 32px;
+    height:32px;
+    line-height: 18px;
+    border: solid #0a001f 1px;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+.stat .stat-name {
+    position: absolute;
+    top: 0;
+    left:0;
+    margin:0;
+    border: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 32px;
+    height:16px;
+    line-height: 16px;
+    text-align: center;
+    color: #0a001f;
+    background-color: #DDDDDD!important;
+}
+.stat .stat-value {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin: 0;
+    border: none;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 32px;
+    text-align: center;
+}
+
+.stat .stat-value {
+    height:16px;
+    line-height: 16px;
+}
+.stat-dexterite::before {
+    content:"dex";
+}
+.stat-force::before {
+    content:"for";
+}
+.stat-concentration::before {
+    content:"con";
+}
+.stat-endurance::before {
+    content:"end";
+}
+.stat-volonte::before {
+    content:"vol";
+}
+.stat-vitalite::before {
+    content:"vit";
+}
+.stat-energie::before {
+    content:"ene";
+}
+
+.two-columns h2 {
+    margin-top: 6mm;
+    padding: 2mm;
+}
+
+.two-columns h3 {
+    margin-top: 4mm;
+    padding: 1.5mm;
+}
+
+.two-columns h4 {
+    margin-top: 3mm;
+    padding: 1.5mm;
+}
+
+.two-columns h5 {
+    margin-top: 2mm;
+    padding: 1mm;
+}
+
+.two-columns h6 {
+    margin-top: 1.5mm;
+    padding: 1mm;
+}
+
+.two-columns p {
+    text-indent: 5mm;
+}
+
+.two-columns p img {
+    margin-left: -5mm;
+}
+
+* + h2,* + h3,* + h4,* + h5,* + h6 {
+    break-inside: avoid-column!important;
+    break-after: avoid-column!important;
+    page-break-inside: avoid!important;
+    page-break-after: avoid!important;
+}
+
+p + h2,p + h3,p + h4,p + h5,p + h6,
+ol + h2,ol + h3,ol + h4,ol + h5,ol + h6,
+ul + h2,ul + h3,ul + h4,ul + h5,ul + h6,
+img + h2,img + h3,img + h4,img + h5,img + h6 {
+    break-before: auto!important;
+    break-inside: avoid-column!important;
+    break-after: avoid-column!important;
+    page-break-before: auto!important;
+    page-break-inside: avoid!important;
+    page-break-after: avoid!important;
+}
+
+h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
+    break-before: avoid-column!important;
+    page-break-before: avoid!important;
+}
+
+.two-columns h1:not(:first-child) {
+    break-before: column;
+}
+
+blockquote {
+    margin-left: 5mm;
+    margin-right: 5mm;
+    background-color: #e0e0e0;
+}
